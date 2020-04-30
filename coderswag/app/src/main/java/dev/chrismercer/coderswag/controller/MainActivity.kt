@@ -19,5 +19,12 @@ class MainActivity : AppCompatActivity() {
 
         adapter = CategoryAdapter(this, DataService.Categories)
         categoryListView.adapter = adapter
+
+        //for viewholder pattern to get clicked
+        /*
+        categoryListView.setOnItemClickListener { parent, view, position, id ->
+            val category = DataService.Categories[position]
+        }
+         */
     }
 }
